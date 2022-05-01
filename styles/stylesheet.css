@@ -19,7 +19,7 @@
   z-index: 2;
 }
 .presentation .wrapper .typing-demo {
-  width: 16ch;
+  width: 22.5ch;
   -webkit-animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
           animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
@@ -73,9 +73,10 @@
   top: 400px;
 }
 .presentation__CV:hover {
-  font-weight: bolder;
   border: solid white 3px;
-  color: white;
+  color: black;
+  background-color: white;
+  transition: 0.5s;
 }
 .presentation__background {
   width: 100%;

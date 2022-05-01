@@ -25,7 +25,7 @@
         z-index: 2;
 
         .typing-demo {
-            width: 16ch;
+            width: 22.5ch;
             animation: typing 3s steps(22)  , blink .5s step-end infinite alternate;
             white-space: nowrap;
             overflow: hidden;
@@ -77,9 +77,10 @@
         
 
         &:hover{
-            font-weight: bolder;
             border: solid white 3px;
-            color: white;
+            color: black;
+            background-color: white;
+            transition: .5s;
         }
     }
 
