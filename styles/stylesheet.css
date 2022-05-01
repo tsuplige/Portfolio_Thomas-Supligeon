@@ -1,0 +1,93 @@
+.presentation {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(14, 24, 56);
+  color: #fefefe;
+}
+.presentation .wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+}
+.presentation .typing-demo {
+  width: 16ch;
+  -webkit-animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
+          animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+.presentation .typing-demo ul {
+  list-style: none;
+}
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.presentation__texte {
+  position: absolute;
+  top: 243px;
+  z-index: 2;
+}
+.presentation__texte p {
+  font-size: 21px;
+}
+.presentation__background {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  /* filter: blur(2px); */
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.Stacks {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(154, 169, 216);
+}
+
+.Projet {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(156, 127, 184);
+}
+
+.Parcours {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(127, 184, 160);
+}
+
+.Contact {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(184, 127, 132);
+}/*# sourceMappingURL=stylesheet.css.map */
