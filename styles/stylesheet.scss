@@ -19,48 +19,69 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 50px;
         
         position: absolute;
         z-index: 2;
-      }
-      
-      .typing-demo {
-        width: 16ch;
-        animation: typing 3s steps(22)  , blink .5s step-end infinite alternate;
-        white-space: nowrap;
-        overflow: hidden;
-        border-right: 3px solid;
-        font-family: monospace;
-        font-size: 2em;
-      }
 
-      .typing-demo ul{
-        list-style: none;
+        .typing-demo {
+            width: 16ch;
+            animation: typing 3s steps(22)  , blink .5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            font-family: monospace;
+            font-size: 2em;
+          }
+          
+          @keyframes typing {
+            from {
+              width: 0
+            }
+          }
+              
+          @keyframes blink {
+            50% {
+              border-color: transparent
+            }
+          }
       }
       
-      @keyframes typing {
-        from {
-          width: 0
-        }
-      }
-          
-      @keyframes blink {
-        50% {
-          border-color: transparent
-        }
-      }
       
 
     &__texte {
         position: absolute;
-        top: 243px;
+        top: 225px;
         z-index: 2;
 
         p {
             font-size: 21px;
+            margin-bottom: 5px;
         }
     }
     
+    &__CV {
+        position: absolute;
+        display: flex;
+        z-index: 2;
+        width: 10em;
+        height: 3em;
+        border: solid white 2px;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none ;
+        top: 400px;
+        
+
+        &:hover{
+            font-weight: bolder;
+            border: solid white 3px;
+            color: white;
+        }
+    }
 
     &__background {
         width: 100%;

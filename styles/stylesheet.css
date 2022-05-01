@@ -14,10 +14,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 50px;
   position: absolute;
   z-index: 2;
 }
-.presentation .typing-demo {
+.presentation .wrapper .typing-demo {
   width: 16ch;
   -webkit-animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
           animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
@@ -26,9 +27,6 @@
   border-right: 3px solid;
   font-family: monospace;
   font-size: 2em;
-}
-.presentation .typing-demo ul {
-  list-style: none;
 }
 @-webkit-keyframes typing {
   from {
@@ -52,11 +50,32 @@
 }
 .presentation__texte {
   position: absolute;
-  top: 243px;
+  top: 225px;
   z-index: 2;
 }
 .presentation__texte p {
   font-size: 21px;
+  margin-bottom: 5px;
+}
+.presentation__CV {
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  width: 10em;
+  height: 3em;
+  border: solid white 2px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  top: 400px;
+}
+.presentation__CV:hover {
+  font-weight: bolder;
+  border: solid white 3px;
+  color: white;
 }
 .presentation__background {
   width: 100%;
