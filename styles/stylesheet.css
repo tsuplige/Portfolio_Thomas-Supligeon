@@ -1,3 +1,44 @@
+@charset "UTF-8";
+.body_img {
+  background-image: url("/img/dynamic-wang-uMo1PTIGIR8-unsplash.jpg");
+}
+
+.inbuild {
+  /* Vos styles existants ici */
+  background-color: rgb(133, 97, 192);
+  width: 100%;
+  height: 5%;
+  color: whitesmoke;
+  text-align: center;
+  position: absolute;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.inbuild_txt {
+  /* Styles pour le texte défilant */
+  white-space: nowrap;
+  font-weight: bold;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.lighter {
+  font-weight: 100;
+  margin-right: 25%;
+  margin-left: 30%;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(-110%);
+  }
+  100% {
+    transform: translateX(110%);
+  }
+}
 .presentation {
   width: 100%;
   height: 100vh;
@@ -5,62 +46,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(14, 24, 56);
+  background-color: rgba(14, 24, 56, 0.467);
   color: #fefefe;
 }
-.presentation .wrapper {
-  height: 100vh;
-  /*This part is important for centering*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  position: absolute;
-  z-index: 2;
-}
-.presentation .wrapper .typing-demo {
-  width: 22.5ch;
-  -webkit-animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
-          animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
-}
-@-webkit-keyframes typing {
-  from {
-    width: 0;
-  }
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-@-webkit-keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
 .presentation__texte {
-  position: absolute;
-  top: 225px;
-  z-index: 2;
+  margin-bottom: 5%;
 }
 .presentation__texte p {
   font-size: 21px;
   margin-bottom: 5px;
 }
 .presentation__CV {
-  position: absolute;
   display: flex;
-  z-index: 2;
   width: 10em;
   height: 3em;
   border: solid white 2px;
@@ -70,7 +67,6 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  top: 400px;
 }
 .presentation__CV:hover {
   border: solid white 3px;
@@ -78,36 +74,18 @@
   background-color: white;
   transition: 0.5s;
 }
-.presentation__background {
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  height: 100%;
-  /* filter: blur(2px); */
-  opacity: 0.3;
-  z-index: 1;
+.presentation .link-smedia {
+  margin-top: 5%;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
-
-.Stacks {
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(154, 169, 216);
+.presentation .link-smedia .linklogo {
+  font-size: 50px;
+  width: 50px;
+  color: #fefefe;
 }
-
-.Projet {
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(156, 127, 184);
-}
-
-.Parcours {
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(127, 184, 160);
-}
-
-.Contact {
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(184, 127, 132);
+.presentation .link-smedia .linklogo:hover {
+  color: rgba(254, 254, 254, 0.4941176471);
 }/*# sourceMappingURL=stylesheet.css.map */
