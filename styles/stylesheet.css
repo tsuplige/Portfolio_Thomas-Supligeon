@@ -160,6 +160,7 @@
 }
 
 .aboutme {
+  display: none;
   background-color: rgb(41, 37, 45);
   width: 100%;
 }
