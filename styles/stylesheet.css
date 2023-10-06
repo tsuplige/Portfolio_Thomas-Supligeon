@@ -1,28 +1,81 @@
-@charset "UTF-8";
-.body_img {
-  background-image: url("/img/dynamic-wang-uMo1PTIGIR8-unsplash.jpg");
+::-webkit-scrollbar {
+  width: 15px;
 }
 
-.inbuild {
+::-webkit-scrollbar-track {
+  background: #76707d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a4354;
+}
+
+.body_option {
+  background-image: url("/img/philip-oroni-bk.jpg");
+  background-size: cover;
+}
+
+.header-container {
   /* Vos styles existants ici */
-  background-color: rgb(133, 97, 192);
+  background-color: rgb(41, 37, 45);
   width: 100%;
-  height: 5%;
+  height: 7%;
   color: whitesmoke;
-  text-align: center;
+  padding: 0 3%;
   position: absolute;
-  font-size: 15px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+.header-container .header_link_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.header-container .header-txt {
+  margin: 0;
+  overflow: hidden;
+  width: 33%;
+}
+.header-container .header_nav {
   display: flex;
   align-items: center;
+  height: 100%;
+  width: 70%;
 }
-
-.inbuild_txt {
-  /* Styles pour le texte défilant */
-  white-space: nowrap;
-  font-weight: bold;
-  width: 100%;
-  margin: auto;
-  overflow: hidden;
+.header-container .header_link {
+  justify-content: space-between;
+}
+.header-container .header_link .link_site {
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.header-container .link_site:hover {
+  color: #ddb3ff;
+}
+.header-container .header_social {
+  justify-content: flex-end;
+}
+.header-container .header_social .header_social_link {
+  color: #fefefe;
+  font-size: 30px;
+  margin-left: 15px;
+}
+.header-container .header_social .header_social_link:hover {
+  color: #ddb3ff;
 }
 
 .lighter {
@@ -31,32 +84,30 @@
   margin-left: 30%;
 }
 
-@keyframes scrollText {
-  0% {
-    transform: translateX(-110%);
-  }
-  100% {
-    transform: translateX(110%);
-  }
-}
 .presentation {
   width: 100%;
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: rgba(14, 24, 56, 0.467);
   color: #fefefe;
 }
-.presentation__texte {
+.presentation .acceuil-presentation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.presentation .acceuil-presentation__texte {
   margin-bottom: 5%;
 }
-.presentation__texte p {
+.presentation .acceuil-presentation__texte p {
   font-size: 21px;
   margin-bottom: 5px;
 }
-.presentation__CV {
+.presentation .acceuil-presentation__CV {
   display: flex;
   width: 10em;
   height: 3em;
@@ -68,24 +119,81 @@
   align-items: center;
   text-decoration: none;
 }
-.presentation__CV:hover {
+.presentation .acceuil-presentation__CV:hover {
   border: solid white 3px;
   color: black;
   background-color: white;
   transition: 0.5s;
 }
-.presentation .link-smedia {
+.presentation .acceuil-presentation .link-smedia {
   margin-top: 5%;
   width: 40%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
-.presentation .link-smedia .linklogo {
+.presentation .acceuil-presentation .link-smedia .linklogo {
   font-size: 50px;
   width: 50px;
   color: #fefefe;
 }
-.presentation .link-smedia .linklogo:hover {
+.presentation .acceuil-presentation .link-smedia .linklogo:hover {
   color: rgba(254, 254, 254, 0.4941176471);
+}
+.presentation .acceuil_img {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 30px;
+}
+.presentation .acceuil_img .img_container {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background-color: #ddb3ff;
+  overflow: hidden;
+  border: 6px solid;
+}
+.presentation .acceuil_img .img_container .profil_img {
+  width: 300px;
+}
+
+.aboutme {
+  background-color: rgb(41, 37, 45);
+  width: 100%;
+}
+
+@media screen and (max-width: 880px) {
+  .header-container {
+    /* Vos styles existants ici */
+    height: 10%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .header-container .header_link_container {
+    display: none;
+  }
+  .presentation {
+    flex-direction: column-reverse;
+    margin-top: 15%;
+  }
+  .acceuil_img {
+    margin: 0;
+  }
+  .acceuil_img .img_container {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-color: #ddb3ff;
+    overflow: hidden;
+    border: 6px solid;
+  }
+  .acceuil_img .img_container .profil_img {
+    width: 300px;
+  }
 }/*# sourceMappingURL=stylesheet.css.map */
