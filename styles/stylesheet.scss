@@ -19,6 +19,7 @@ $white-text: #f2f0f7;
 
 main {
     background-color: rgba(14, 24, 56, 0.467);
+    width: 100%;
 }
 
 .header-container {
@@ -229,6 +230,7 @@ main {
 .stack {
     color: $white-text;
     padding: 5%;
+    display: none;
     .stack-content {
         display: flex;
 

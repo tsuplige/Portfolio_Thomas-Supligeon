@@ -17,6 +17,7 @@
 
 main {
   background-color: rgba(14, 24, 56, 0.467);
+  width: 100%;
 }
 
 .header-container {
@@ -187,6 +188,7 @@ main {
 .stack {
   color: #f2f0f7;
   padding: 5%;
+  display: none;
 }
 .stack .stack-content {
   display: flex;
