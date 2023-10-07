@@ -167,7 +167,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 30px;
 }
 .aboutme .aboutme-content .profil .profil_container {
   width: 300px;
