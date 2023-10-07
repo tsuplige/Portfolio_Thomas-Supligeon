@@ -1,3 +1,4 @@
+$white-text: #f2f0f7;
 ::-webkit-scrollbar {
     width: 15px;
 }
@@ -16,12 +17,16 @@
     // overflow: hidden; 
 }
 
+main {
+    background-color: rgba(14, 24, 56, 0.467);
+}
+
 .header-container {
     /* Vos styles existants ici */
     background-color: rgb(41, 37, 45);
     width: 100%;
     height: 7%;
-    color: whitesmoke;
+    color: $white-text;
     padding: 0 3%;
     // text-align: start;
     position: absolute;
@@ -29,6 +34,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+        .pink-font {
+            color: #f98fff;
+        }
 
     .header_link_container {
         display: flex;
@@ -64,7 +72,7 @@
     
         .link_site {
             text-decoration: none;
-            color: white;
+            color: $white-text;
             // margin: 0 10px 0 10px;
             height: 100%;
             width: 30%;
@@ -82,7 +90,7 @@
     .header_social{
         justify-content: flex-end;
         .header_social_link {
-            color: #fefefe;
+            color: $white-text;
             font-size: 30px;
             margin-left: 15px;
 
@@ -116,8 +124,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: rgba(14, 24, 56, 0.467);
-    color: #fefefe;      
+    color: $white-text;   
 
     .acceuil-presentation {
         display: flex;
@@ -140,7 +147,7 @@
             border: solid white 2px;
             border-radius: 10px;
             text-align: center;
-            color: white;
+            color: $white-text;
             justify-content: center;
             align-items: center;
             text-decoration: none ;
@@ -155,51 +162,98 @@
         }
     
         .link-smedia {
-            margin-top: 5%;
-            width: 40%;
+            margin-top: 7%;
+            width: 80%;
             display: flex;
-            justify-content:space-between;
+            justify-content:space-evenly;
             flex-direction: row;
             
     
             .linklogo{
                 font-size: 50px;
                 width: 50px;
-                color: #fefefe;
+                color: $white-text;
             &:hover {
                 color: #fefefe7e;
             }
             }
         }
     }
-
-    .acceuil_img {
-        height: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 0 0 30px;
-
-        .img_container {
-        width: 300px;
-        height: 300px;
-        border-radius: 100%;
-        background-color: #ddb3ff;
-        overflow: hidden;
-        border: 6px solid;
-
-            .profil_img{
-                width: 300px;
-            }
-        }
-    }
 }
 
 .aboutme {
-    display: none;
+    display: flex;
     background-color: rgb(41, 37, 45);
-    width: 100%;
+    // width: 90%;
+    // border-radius: 20px;
+    padding: 5%;
+    color: $white-text;
+    margin: auto;
+    flex-direction: column;
+
+    .aboutme-content {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 5%;
+        align-items: center;
+
+        .profil {
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 30px;
     
+            .profil_container {
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            background-color: #ddb3ff;
+            overflow: hidden;
+            border: 6px solid;
+    
+                .profil_img{
+                    width: 300px;
+                }
+            }
+        }
+
+        &-txt {
+            font-size: 1.3em;
+            font-weight: 100;
+        }
+
+    }
+}
+
+.stack {
+    color: $white-text;
+    padding: 5%;
+    .stack-content {
+        display: flex;
+
+        .front-stack{
+            width: 50%;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .back-stack{
+            width: 50%;
+        }
+    }
+
+    .stack-grid {
+        list-style: none;
+        display: grid;
+        grid:flow;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 30% 30% 30%;
+
+        font-size: 50px;
+    }
 }
 
 @media screen and (max-width: 880px) {
@@ -215,6 +269,12 @@
         justify-content: center;
         text-align: center;
 
+        .header-txt {
+            margin: 0;
+            overflow: hidden;
+            width: 100%;
+        }
+
         .header_link_container {
            display: none;
         }
@@ -222,11 +282,11 @@
 
     .presentation{
         flex-direction: column-reverse;    
-        margin-top: 15%;
+        margin-top: 7%;
     }
 
     .acceuil_img {
-        margin: 0;
+        margin-right: 30px;
         .img_container {
         width: 300px;
         height: 300px;
@@ -238,6 +298,26 @@
             .profil_img{
                 width: 300px;
             }
+        }
+    }
+
+    .aboutme {
+    
+        .aboutme-content {
+            flex-direction: column;
+    
+            .profil {
+        
+                .profil_container {
+        
+                    .profil_img{
+                    }
+                }
+            }
+    
+            &-txt {
+            }
+    
         }
     }
   }

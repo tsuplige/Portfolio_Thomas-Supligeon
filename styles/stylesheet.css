@@ -15,12 +15,16 @@
   background-size: cover;
 }
 
+main {
+  background-color: rgba(14, 24, 56, 0.467);
+}
+
 .header-container {
   /* Vos styles existants ici */
   background-color: rgb(41, 37, 45);
   width: 100%;
   height: 7%;
-  color: whitesmoke;
+  color: #f2f0f7;
   padding: 0 3%;
   position: absolute;
   font-size: 20px;
@@ -33,6 +37,9 @@
   width: 100%;
   z-index: 999px;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+.header-container .pink-font {
+  color: #f98fff;
 }
 .header-container .header_link_container {
   display: flex;
@@ -56,7 +63,7 @@
 }
 .header-container .header_link .link_site {
   text-decoration: none;
-  color: white;
+  color: #f2f0f7;
   height: 100%;
   width: 30%;
   justify-content: center;
@@ -70,7 +77,7 @@
   justify-content: flex-end;
 }
 .header-container .header_social .header_social_link {
-  color: #fefefe;
+  color: #f2f0f7;
   font-size: 30px;
   margin-left: 15px;
 }
@@ -91,8 +98,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: rgba(14, 24, 56, 0.467);
-  color: #fefefe;
+  color: #f2f0f7;
 }
 .presentation .acceuil-presentation {
   display: flex;
@@ -114,7 +120,7 @@
   border: solid white 2px;
   border-radius: 10px;
   text-align: center;
-  color: white;
+  color: #f2f0f7;
   justify-content: center;
   align-items: center;
   text-decoration: none;
@@ -126,28 +132,43 @@
   transition: 0.5s;
 }
 .presentation .acceuil-presentation .link-smedia {
-  margin-top: 5%;
-  width: 40%;
+  margin-top: 7%;
+  width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: row;
 }
 .presentation .acceuil-presentation .link-smedia .linklogo {
   font-size: 50px;
   width: 50px;
-  color: #fefefe;
+  color: #f2f0f7;
 }
 .presentation .acceuil-presentation .link-smedia .linklogo:hover {
   color: rgba(254, 254, 254, 0.4941176471);
 }
-.presentation .acceuil_img {
+
+.aboutme {
+  display: flex;
+  background-color: rgb(41, 37, 45);
+  padding: 5%;
+  color: #f2f0f7;
+  margin: auto;
+  flex-direction: column;
+}
+.aboutme .aboutme-content {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 5%;
+  align-items: center;
+}
+.aboutme .aboutme-content .profil {
   height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 0 30px;
+  margin-left: 30px;
 }
-.presentation .acceuil_img .img_container {
+.aboutme .aboutme-content .profil .profil_container {
   width: 300px;
   height: 300px;
   border-radius: 100%;
@@ -155,14 +176,38 @@
   overflow: hidden;
   border: 6px solid;
 }
-.presentation .acceuil_img .img_container .profil_img {
+.aboutme .aboutme-content .profil .profil_container .profil_img {
   width: 300px;
 }
+.aboutme .aboutme-content-txt {
+  font-size: 1.3em;
+  font-weight: 100;
+}
 
-.aboutme {
-  display: none;
-  background-color: rgb(41, 37, 45);
-  width: 100%;
+.stack {
+  color: #f2f0f7;
+  padding: 5%;
+}
+.stack .stack-content {
+  display: flex;
+}
+.stack .stack-content .front-stack {
+  width: 50%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.stack .stack-content .back-stack {
+  width: 50%;
+}
+.stack .stack-grid {
+  list-style: none;
+  display: grid;
+  grid: flow;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 30% 30% 30%;
+  font-size: 50px;
 }
 
 @media screen and (max-width: 880px) {
@@ -176,15 +221,20 @@
     justify-content: center;
     text-align: center;
   }
+  .header-container .header-txt {
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+  }
   .header-container .header_link_container {
     display: none;
   }
   .presentation {
     flex-direction: column-reverse;
-    margin-top: 15%;
+    margin-top: 7%;
   }
   .acceuil_img {
-    margin: 0;
+    margin-right: 30px;
   }
   .acceuil_img .img_container {
     width: 300px;
@@ -196,5 +246,8 @@
   }
   .acceuil_img .img_container .profil_img {
     width: 300px;
+  }
+  .aboutme .aboutme-content {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=stylesheet.css.map */
