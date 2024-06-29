@@ -462,7 +462,9 @@ main {
 
     #project_grid {
         
-        grid-template-columns: 450px;
+        display: flex;
+
+        flex-direction: column;
 
     }
   }

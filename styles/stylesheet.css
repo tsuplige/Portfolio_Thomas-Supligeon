@@ -343,6 +343,7 @@ main {
     font-size: 30px;
   }
   #project_grid {
-    grid-template-columns: 450px;
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=stylesheet.css.map */
