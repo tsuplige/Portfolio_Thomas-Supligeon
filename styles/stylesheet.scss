@@ -339,13 +339,14 @@ main {
         padding: 10px;
         border-radius: 15px;
 
-        width: 450px;
+        // width: 450px;
+        max-width: 68vh;
 
         align-items: center;
 
         background-color: #b2adbe;
         .project_img {
-            width: 430px;
+            width: 99%;
             height: 300px;
 
             object-fit: cover;
