@@ -250,6 +250,7 @@ main {
   align-items: center;
   width: 100%;
   padding: 10px;
+  margin-bottom: 20px;
 }
 .projet h2 {
   margin-bottom: 5%;
@@ -283,6 +284,18 @@ main {
 }
 .projet .project_container .project_link i {
   font-size: 25px;
+}
+.projet i {
+  color: #4a4354;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(41, 37, 45);
+  height: 150px;
+  color: white;
 }
 
 @media screen and (max-width: 880px) {
